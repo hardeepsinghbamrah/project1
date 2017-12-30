@@ -1,7 +1,7 @@
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('files', metavar='F', type=str, nargs='+')
+parser.add_argument('files', metavar='F', type=str, nargs='+', help="Enter file names")
 parser.add_argument('-n', '--numbers', action='store_true', help="print line numbers")
 
 args = parser.parse_args()
