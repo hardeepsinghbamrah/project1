@@ -13,7 +13,7 @@ for in_file_name in args.files:
     in_file = open(in_file_name)
     if args.numbers:
         for line in in_file.readlines():
-            print("\t{}\t{}").format('line_number','line')
+            print("\t{}\t{}").format(line_number,line)
             line_number =+ 1
     else:
         print(in_file.read())
